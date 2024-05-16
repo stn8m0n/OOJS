@@ -48,13 +48,15 @@ const pessoa ={
     conhecimentos: conhecimentos,
 }
 
-console.log( typeof nome);
-console.log( typeof idade);
-console.log( typeof ehMaiorDeIdade);
-console.log( typeof conhecimentos);
-console.log( typeof pessoa); //object
-console.log(typeof carroDaMaria);
+// console.log( typeof nome);
+// console.log( typeof idade);
+// console.log( typeof ehMaiorDeIdade);
+// console.log( typeof conhecimentos);
+// console.log( typeof pessoa); //object
+// console.log(typeof carroDaMaria);
 
-//Carro é um construtor, o carroDaMaria2 é uma instancia de Carro //instanceof usado para verificação de tipos de instancia
-console.log(carroDaMaria2 instanceof Carro)// carroDaMaria2 é uma instancia de Carro? Verdadeiro.
-console.log(conhecimentos instanceof Carro) //conhecimentos é uma instancia de Carro? Falso.
+// //Carro é um construtor, o carroDaMaria2 é uma instancia de Carro //instanceof usado para verificação de tipos de instancia
+// console.log(carroDaMaria2 instanceof Carro)// carroDaMaria2 é uma instancia de Carro? Verdadeiro.
+// console.log(conhecimentos instanceof Carro) //conhecimentos é uma instancia de Carro? Falso.
+
+//Aula4 -Como acessar os atributos dentro de um objeto.

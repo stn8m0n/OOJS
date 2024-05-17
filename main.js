@@ -60,3 +60,36 @@ const pessoa ={
 // console.log(conhecimentos instanceof Carro) //conhecimentos é uma instancia de Carro? Falso.
 
 //Aula4 -Como acessar os atributos dentro de um objeto.
+
+// notação ponto console.log(pessoa.nome) Acesso a constante pessoa . atributo nome
+//console.log(pessoa[nome]) [nome] sem '' é variavel e o atributo nome aqui é uma string.
+
+
+
+function exibeAtributo (nomeAtributo){
+    console.log(pessoa[nomeAtributo])
+}
+
+exibeAtributo('nome');
+
+pessoa.sobrenome = undefined;
+
+Object.freeze(pessoa);
+
+pessoa.nome = 'joao';
+
+if (pessoa['sobrenome']){
+    console.log("a pessoa tem um sobrenome")
+}
+
+if('sobrenome' in pessoa){
+    console.log('tem sobtrenome');
+}
+
+console.log(pessoa.nome)
+console.log(pessoa['nome'])
+
+console.log(Object.keys(pessoa).length);//utiliza pra saber q quantidade de propriedades que existem em um objeto(.lenght).
+console.log(Object.values(pessoa));
+
+//Aula5 - Aplique herança

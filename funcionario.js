@@ -27,3 +27,5 @@ funcionario1.dizOi();
 funcionario1.dizCargo();
 //funcionario1.bataba();
 //pessoa.dizCargo(); // diz cargo da errado pq ele não existe da
+
+//aula6

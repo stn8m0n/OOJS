@@ -14,7 +14,22 @@ function Pessoa(nome){
 
 function Funcionario (nome, cargo, salario){
     this.cargo = cargo;
-    this.salario = salario;
+    // this.salario = salario; transformar em uma variaval para que ele não esteja mais exporta alteração(segurança) tornar atributo provado.
+    let _salario = salario;
+
+    //getter e setter
+    this.getSalario = function(){ //função ou melhor método para acessar _salario //retorna função de get salario
+        return `O salário de ${this.nome} é ${_salario}`;
+    }
+
+    this.setSalario = function(valor){ //if tratativa para não atribuir o valor de uma string na variavel salario.//retorna função de get salario
+       if (typeof valor === 'number'){
+        _salario = valor
+
+       }
+    } //vou atribuir o salario que vamos recuperar no ()
+
+    // funcionario1.atribuirSalario(7000);
 
     //this//funcionario, this chama(call) Pessoa construtora para dentro da funçao funcionário.
     Pessoa.call(this, nome);
@@ -28,4 +43,6 @@ funcionario1.dizCargo();
 //funcionario1.bataba();
 //pessoa.dizCargo(); // diz cargo da errado pq ele não existe da
 
-//aula6
+funcionario1.setSalario('mil');
+
+console.log(funcionario1.getSalario())
